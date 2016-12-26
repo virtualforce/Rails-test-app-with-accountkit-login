@@ -3,13 +3,13 @@ A demo application for authentication with facebook's account_kit
 Clone the repo:
 
 ```
-git clone https://github.com/vnnoder/account_kit_demo.git
+git clone https://github.com/virtualforce/Rails-test-app-with-accountkit-login.git
 ```
 
 Run db migrations:
 
 ```
-cd account_kit_demo
+cd Rails-test-app-with-accountkit-login
 rake db:migrate
 ```
 
