@@ -28,15 +28,16 @@ module AccountKit
     def access_token(code)
       response = AccountKit.access_token(code)
       json_response = JSON.parse(response.body)
+      puts "*"*100, json_response
       [json_response['access_token'], json_response['token_refresh_interval_sec'], json_response['id']]
     end
 
     def app_id_for(require_app_secret)
-      require_app_secret ? '1804778196417244' : '981076428655293'
+      require_app_secret ? '1763782337215572' : '1763782337215572'
     end
 
     def app_secret_for(require_app_secret)
-      require_app_secret ? '074f550a820718853e92422bb012b932' : '5e6353199a4fd713bb8b9be58428f42d'
+      require_app_secret ? 'b4cc742088a35e8512a9341c33616edc' : 'b4cc742088a35e8512a9341c33616edc'
     end
   end
 end
